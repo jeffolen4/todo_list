@@ -9,7 +9,87 @@
   <title>To-do List</title>
 </head>
 <body>
-  <div class="container inputtask">
+  <div class="container wholedoc col-sm-10">
+    <div class="row" id="row-1">
+
+      <div class="container col-sm-2 newlist ">
+        <div class="row">
+          <h4>Select List</h4>
+          <select id="selectlist">
+              <option value="default-list">default</option>
+              <option value="work-list">Work list</option>
+            </select>
+            <!-- <button type="button" id="addtype" class="btn btn-primary">New list type</button>
+            -->
+          </div>
+      </div>
+
+      <div class="container col-sm-10 listentry">
+        <div class="row">
+          <h4>To-do List</h4>
+          <form>
+            <div class="form-group">
+              <label class="col-sm-2" for="task">Task</label>
+              <input class="col-sm-9" id="task" type="text" placeholder="task name/description">
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2" for="desc">Description</label>
+              <input class="col-sm-9" id="desc" type="text" placeholder="task long description">
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2" for="status">Current Status</label>
+              <input class="col-sm-9" id="status" type="text" placeholder="current status">
+            </div>
+
+            <div class="col-sm-11">
+              <button type="submit" id="button" class="btn btn-primary">Add Item</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div> <!-- complete the first screen row -->
+
+    <div class="row listdisplay">
+
+      <div class="container col-sm-3 listitems">
+        <div class="row" id="task-item-line">
+          <p><h4>To-do items</h4></p>
+          <div class="alllists" id="default-list">
+          </div>
+          <div class="alllists" id="work-list">
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-sm-9 listdetails" id="todo-details-item">
+        <div class="row">
+          <p><h4>Item Details</h4></p>
+        </div>
+        <div class="row">
+          <p class="col-sm-2"><span class="itemlabel">Task name:</span></p><p class="col-sm-4 taskname"></p>
+        </div>
+        <div class="row">
+          <p class="col-sm-2"><span class="itemlabel">Description:</span></p><p class="col-sm-4 taskdesc"></p>
+        </div>
+        <div class="row">
+          <p class="col-sm-2"><span class="itemlabel">Status:</span></p><p class="col-sm-4 taskstatus"></p>
+        </div>
+        <div class="col-sm-9">
+          <button type="button" id="closeitem" class="btn btn-primary">Done!</button>
+        </div>
+      </div>
+
+    </div> <!-- complete 2nd screen row -->
+
+  </div> <!-- complete whole document container -->
+
+
+
+<!--
     <h1>To-do List</h1>
     <form>
       <div class="row">
@@ -64,6 +144,6 @@
     </div>
 
   </div>
-
+-->
 </body>
 </html>
