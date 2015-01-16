@@ -1,14 +1,14 @@
 var appTodoList = appTodoList || {};
 
 // create a list item
-appTodoList.listItem = function( listType, task, description, status ) {
+appTodoList.listItem = function( listType, task, desc, status ) {
 
   this.listType = listType;
   this.task = task;
-  this.description = description;
+  this.taskDesc = desc;
   if ( status === null || status === "") {
-    this.status = "open";
+    this.taskStatus = "open";
   } else {
-    this.status = status;
+    this.taskStatus = status;
   }
 }

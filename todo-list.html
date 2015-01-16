@@ -9,27 +9,27 @@
   <title>To-do List</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container inputtask">
     <h1>To-do List</h1>
     <form>
       <div class="row">
         <div class="form-group">
           <label class="col-sm-2" for="task">Task</label>
-          <input class="col-sm-10" id="task" type="text" placeholder="task name/description">
+          <input class="col-sm-9" id="task" type="text" placeholder="task name/description">
         </div>
       </div>
 
       <div class="row">
         <div class="form-group">
-          <label class="col-sm-2" for="description">Description</label>
-          <input class="col-sm-10" id="task" type="text" placeholder="task long description">
+          <label class="col-sm-2" for="desc">Description</label>
+          <input class="col-sm-9" id="desc" type="text" placeholder="task long description">
         </div>
       </div>
 
       <div class="row">
         <div class="form-group">
           <label class="col-sm-2" for="status">Current Status</label>
-          <input class="col-sm-10" id="status" type="text" placeholder="current status">
+          <input class="col-sm-9" id="status" type="text" placeholder="current status">
         </div>
       </div>
 
@@ -40,9 +40,30 @@
     </form>
   </div>
 
-  <div class="container">
-    <div class="col-offset-sm-2 col-sm-10 row">
-    <ul class="displaylist"></ul>
+  <div class="container todo-item-list">
+    <div class="col-sm-4 row" id="task-item-line">
+      <p><h4>To-do items</h4></p>
+    </div>
+
+
+    <div class="col-sm-8 row">
+      <div class="container" id="todo-details-item">
+        <div class="row">
+          <p><h4>Item Details</h4></p>
+        </div>
+          <div class="row">
+          <p class="col-sm-2"><span class="itemlabel">Task name:</span></p><p class="col-sm-4 taskname"></p>
+        </div>
+        <div class="row">
+          <p class="col-sm-2"><span class="itemlabel">Description:</span></p><p class="col-sm-4 taskdesc"></p>
+        </div>
+        <div class="row">
+          <p class="col-sm-2"><span class="itemlabel">Status:</span></p><p class="col-sm-4 taskstatus"></p>
+        </div>
+      </div>
+    </div>
+
   </div>
+
 </body>
 </html>

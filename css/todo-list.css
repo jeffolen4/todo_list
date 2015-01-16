@@ -1,0 +1,33 @@
+.todo-item-list, .inputtask {
+  border-style: solid;
+  border-color: grey;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  float: center;
+}
+
+.taskitem {
+  color: blue;
+  text-decoration: underline;
+}
+
+.taskitem:hover {
+  color: #FF00FF;
+}
+
+span.itemlabel {
+  color: brown;
+  font-size: 15px;
+  text-decoration: bold;
+}
+
+/*#todo-details-item, #task-item-line {
+  border-style: solid;
+  border-color: grey;
+}*/
